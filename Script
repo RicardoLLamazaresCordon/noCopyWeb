@@ -1,0 +1,17 @@
+<SCRIPT>
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && (event.key === 'c' || event.key === 'C')) {
+    // Acción a realizar cuando se presiona Ctrl + C
+    event.preventDefault(); // Evitar el comportamiento predeterminado de copiar al portapapeles
+    alert('La función de copiar está desactivada en esta página.');
+    // Otras acciones que desees realizar
+  }
+});
+document.addEventListener('mousedown', function(event) {
+  event.preventDefault(); // Evitar el comportamiento predeterminado del clic del ratón
+});
+
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault(); // Evitar el menú contextual del clic derecho
+});
+</SCRIPT>
